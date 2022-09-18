@@ -52,6 +52,9 @@ a {
               font-family: "Play";
               font-weight: 600;
             }
+            &:first-child {
+              margin-top: 18px;
+            }
           }
         }
       }
@@ -196,5 +199,52 @@ a {
   }
   100% {
     transform: rotate(-280deg);
+  }
+}
+@media all and (max-width: 1260px) {
+  .wrap {
+    #bottom {
+      .content {
+        .arrow {
+          img {
+            width: 22px;
+          }
+        }
+        .name {
+          padding-bottom: 60px;
+        }
+        .pagination {
+          .navi {
+            font-size: clamp(20px, 2vw, 24px) !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 720px) {
+  .wrap {
+    #header {
+      padding-top: 30px;
+    }
+    #bottom {
+      .content {
+        .name {
+          padding-bottom: 30px;
+        }
+        .arrow {
+          bottom: 30px;
+        }
+        .pagination {
+          bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 400px) {
+  .wrap #header .inner .top .location .swiper-pagination-bullet .tooltip {
+    font-size: 15px;
   }
 }

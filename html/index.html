@@ -15,10 +15,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="../css/owl.carousel.min.css" />
     <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="../css/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Play:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/swiper-bundle.min.js"></script>
     <script src="../js/owl.carousel.min.js"></script>
-    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="../js/aos.js"></script>
   </head>
   <body>
     <div class="wrap">
@@ -50,15 +53,14 @@
           <div class="swiper-wrapper">
             <section class="section swiper-slide" id="home">
               <div class="title">
-                <h2 class="t1">Experiences</h2>
-                <h2 class="t2">by Portfolio</h2>
+                <h2 class="t1" data-aos="fade-up" data-aos-delay="400" data-aos-duration="0">Experiences</h2>
+                <h2 class="t2" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1500">by Portfolio</h2>
               </div>
             </section>
-            <section class="section swiper-slide" id="About">
+            <section class="section swiper-slide" id="about">
               <div class="page">
                 <div class="txtFirst">
                   <h2>기본에서 시작하다</h2>
-                  <h2 class="l50">Philosophy</h2>
                   <p>
                     우리는 항상 고민하고 생각합니다.<br />
                     고객이 무엇을 원하고, 왜 해야하며,<br />
@@ -67,7 +69,7 @@
                   </p>
                   <div class="innerTxt">
                     <h2>분석 설정</h2>
-                    <h2 class="l50">Process</h2>
+
                     <p>
                       우리는 항상 고민하고 생각합니다.<br />
                       고객이 무엇을 원하고, 왜 해야하며,<br />
@@ -78,7 +80,6 @@
                 </div>
                 <div class="txtSeond">
                   <h2>기본에서 시작하다</h2>
-                  <h2 class="l50">Philosophy</h2>
                   <p>
                     우리는 항상 고민하고 생각합니다.<br />
                     고객이 무엇을 원하고, 왜 해야하며,<br />
@@ -87,7 +88,7 @@
                   </p>
                   <div class="innerTxt">
                     <h2>분석 설정</h2>
-                    <h2 class="l50">Process</h2>
+
                     <p>
                       우리는 항상 고민하고 생각합니다.<br />
                       고객이 무엇을 원하고, 왜 해야하며,<br />
@@ -98,7 +99,173 @@
                 </div>
               </div>
             </section>
-            <section class="section swiper-slide" id="Project "></section>
+            <section class="section swiper-slide" id="project">
+              <div class="sub_content">
+                <div class="chapter">
+                  <div class="cm_hero" style="height: 902px">
+                    <div class="slide_hero owl-carousel owl-theme owl-loaded">
+                      <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                          <div class="owl-item" style="width: 480px">
+                            <div class="item">
+                              <div class="cmh_wrap" style="color: #e91b23">
+                                <div class="cmh_pic album">
+                                  <a href="#">
+                                    <img src="../images/01.png" alt="" />
+                                  </a>
+                                </div>
+                                <div class="cmh_color">
+                                  <i>01</i>
+                                </div>
+                                <div class="cmh_txt">
+                                  <span>Website Clone</span>
+                                  <h2 class="title">미쓰비시 <br />엘레베이터</h2>
+                                  <p>
+                                    정적 웹사이트를 만들기 위해 <br />
+                                    Gatsby라는 프레임워크를 접하였고<br />
+                                    공부를 하면서 만들었으며 꾸준히 <br />
+                                    업데이트 중입니다!
+                                  </p>
+                                  <img src="../images/stack01.png" alt="" class="stack01" />
+                                  <a href="#" class="btn middle arrow"><span>READ MORE</span></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="owl-item" style="width: 480px">
+                            <div class="item">
+                              <div class="cmh_wrap" style="color: #396cdb">
+                                <div class="cmh_pic album">
+                                  <a href="#">
+                                    <img src="../images/02.png" alt="" />
+                                  </a>
+                                </div>
+                                <div class="cmh_color">
+                                  <i>02</i>
+                                </div>
+                                <div class="cmh_txt">
+                                  <span>Website Clone</span>
+                                  <h2 class="title">KCC<br />글라스</h2>
+                                  <p>
+                                    정적 웹사이트를 만들기 위해 <br />
+                                    Gatsby라는 프레임워크를 접하였고<br />
+                                    공부를 하면서 만들었으며 꾸준히 <br />
+                                    업데이트 중입니다!
+                                  </p>
+                                  <img src="../images/stack01.png" alt="" class="stack01" />
+                                  <a href="#" class="btn middle arrow"><span>READ MORE</span></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="owl-item" style="width: 480px">
+                            <div class="item">
+                              <div class="cmh_wrap" style="color: #db395c">
+                                <div class="cmh_pic album">
+                                  <a href="#">
+                                    <img src="../images/03.png" alt="" />
+                                  </a>
+                                </div>
+                                <div class="cmh_color">
+                                  <i>03</i>
+                                </div>
+                                <div class="cmh_txt">
+                                  <span>Toy Projec</span>
+                                  <h2 class="title">날씨<br />App 만들기</h2>
+                                  <p>
+                                    정적 웹사이트를 만들기 위해 <br />
+                                    Gatsby라는 프레임워크를 접하였고<br />
+                                    공부를 하면서 만들었으며 꾸준히 <br />
+                                    업데이트 중입니다!
+                                  </p>
+                                  <img src="../images/stack01.png" alt="" class="stack01" />
+                                  <a href="#" class="btn middle arrow"><span>READ MORE</span></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="owl-item" style="width: 480px">
+                            <div class="item">
+                              <div class="cmh_wrap" style="color: #db8539">
+                                <div class="cmh_pic album">
+                                  <a href="#">
+                                    <img src="../images/04.png" alt="" />
+                                  </a>
+                                </div>
+                                <div class="cmh_color">
+                                  <i>04</i>
+                                </div>
+                                <div class="cmh_txt">
+                                  <span>Toy Projec</span>
+                                  <h2 class="title">뉴스<br />App 만들기</h2>
+                                  <p>
+                                    정적 웹사이트를 만들기 위해 <br />
+                                    Gatsby라는 프레임워크를 접하였고<br />
+                                    공부를 하면서 만들었으며 꾸준히 <br />
+                                    업데이트 중입니다!
+                                  </p>
+                                  <img src="../images/stack01.png" alt="" class="stack01" />
+                                  <a href="#" class="btn middle arrow"><span>READ MORE</span></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="owl-item" style="width: 480px">
+                            <div class="item">
+                              <div class="cmh_wrap" style="color: #fab742">
+                                <div class="cmh_pic album">
+                                  <a href="#">
+                                    <img src="../images/05.png" alt="" />
+                                  </a>
+                                </div>
+                                <div class="cmh_color">
+                                  <i>05</i>
+                                </div>
+                                <div class="cmh_txt">
+                                  <span>Toy Projec</span>
+                                  <h2 class="title">서울관광<br />게시판</h2>
+                                  <p>
+                                    정적 웹사이트를 만들기 위해 <br />
+                                    Gatsby라는 프레임워크를 접하였고<br />
+                                    공부를 하면서 만들었으며 꾸준히 <br />
+                                    업데이트 중입니다!
+                                  </p>
+                                  <img src="../images/stack02.png" alt="" class="stack02" />
+                                  <a href="#" class="btn middle arrow"><span>READ MORE</span></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-nav">
+                        <button class="owl-prev"></button>
+                        <button class="owl-next"></button>
+                      </div>
+                      <div class="owl-dots"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="section swiper-slide" id="connect">
+              <div class="title-box">
+                <h2>Connect</h2>
+                <p>감사합니다.</p>
+                <div class="contact">
+                  <p class="email">wang7807@naver.com</p>
+                  <span class="number">010-9512-4770</span>
+                </div>
+              </div>
+              <div class="connect-box">
+                <form class="form-box">
+                  <input type="text" placeholder="Name" id="name" />
+                  <input type="text" placeholder="Email" id="email" />
+                  <input type="text" placeholder="Message" id="message" />
+                  <button type="button" id="submit" class="btn middle arrow">Send</button>
+                </form>
+              </div>
+            </section>
           </div>
         </main>
         <div class="bg">
@@ -117,6 +284,7 @@
       </div>
     </div>
     <script>
+      AOS.init();
       new Swiper("#main", {
         direction: "vertical",
         speed: 1000,
@@ -138,6 +306,10 @@
         },
       });
       const toolTips = ["H", "About", "Project", "Connect"];
+      const owl_stage = document.querySelector(".owl-stage");
+      function stage() {
+        owl_stage.classList.add("on");
+      }
       const mainSlider = new Swiper("#main", {
         direction: "vertical",
         speed: 1000,
@@ -158,14 +330,99 @@
           },
           slidePrevTransitionStart: function () {
             console.log("올라감");
-            setTimeout(200);
+            classChange();
           },
           slideNextTransitionStart: function () {
             console.log("내려감");
-            setTimeout(550);
+            classChange();
+            setTimeout(stage, 2000);
           },
         },
       });
+      const owl = $(".owl-carousel");
+      const slide_hero = $(".slide_hero");
+      function classChange() {
+        if (mainSlider.realIndex === 2) {
+          /* 슬라이드 */
+          slide_hero.owlCarousel({
+            items: 3,
+            loop: true,
+            nav: true,
+            center: true,
+            callbacks: true,
+            autoplay: false,
+            autoplayTimeout: 9000,
+            autoplayHoverPause: false,
+            // onInitialized: inithero,
+          });
+          // slide_hero.on("changed.owl.carousel", function (e) {
+          //   if (!$(".cmh_btn").hasClass("stop")) {
+          //     slide_hero.trigger("stop.owl.autoplay");
+          //     slide_hero.trigger("play.owl.autoplay");
+          //   } else {
+          //     slide_hero.trigger("stop.owl.autoplay");
+          //   }
+          // });
+        }
+      }
+      $(".owl-next").click(() => owl.trigger("next.owl.carousel"));
+      $(".owl-prev").click(() => owl.trigger("prev.owl.carousel"));
+      $(document).ready(function () {
+        emailjs.init("ey2oCxL9xayfxIcIW");
+
+        $("#submit").click(function () {
+          var templateParams = {
+            name: $("#name").val(),
+            email: $("#email").val(),
+            message: $("#message").val(),
+          };
+
+          emailjs.send("gmail", "template_8tgp22r", templateParams).then(
+            function (response) {
+              alert("이메일 보내주셔서 감사합니다!");
+              window.location.reload();
+            },
+            function (error) {
+              alert("정상적인 제출이 이루어지지 않았습니다. 다시 시도해주세요!");
+            }
+          );
+        });
+      });
+    </script>
+    <script>
+      // $(".owl-dot").append(
+      //   '<div class="circular"><div class="inner"></div><div class="circle"><div class="bar left"><div class="progress"></div></div><div class="bar right"><div class="progress"></div></div></div></div>'
+      // );
+
+      // function calherobtn() {
+      //   var heroHeight = 25;
+      //   if ($(window).width() > 768) {
+      //     heroHeight = 25;
+      //   } else {
+      //     heroHeight = 30;
+      //   }
+
+      //   heroitem = heroitemCount;
+      //   heroitem = heroitem * heroHeight;
+
+      //   if ($(window).width() > 768) {
+      //     $("#container .chapter .cm_hero .cmh_btn").css({ transform: "translateY(" + heroitem + "px)" });
+      //   } else {
+      //     $("#container .chapter .cm_hero .cmh_btn").css({ transform: "translateX(" + heroitem + "px)" });
+      //   }
+      // }
+
+      // $("#container .chapter .cm_hero .cmh_btn").on("click", function () {
+      //   if ($("#container .chapter .cm_hero .cmh_btn").hasClass("stop")) {
+      //     $("#container .chapter .cm_hero .cmh_btn").removeClass("stop");
+      //     $("#container .chapter .cm_hero .owl-dots").removeClass("stop");
+      //     slide_hero.trigger("play.owl.autoplay", [5000]);
+      //   } else {
+      //     $("#container .chapter .cm_hero .cmh_btn").addClass("stop");
+      //     $("#container .chapter .cm_hero .owl-dots").addClass("stop");
+      //     slide_hero.trigger("stop.owl.autoplay");
+      //   }
+      // });
     </script>
     <!-- <script>
 
