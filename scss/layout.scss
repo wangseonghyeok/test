@@ -94,14 +94,18 @@ a {
         .navi {
           font-size: 24px;
           font-family: "Play";
-          .swiper-pagination-current {
-            font-weight: 600;
-            padding-right: 10px;
-          }
-          .swiper-pagination-total {
-            padding-left: 10px;
-            color: #666;
-            font-weight: 600;
+          font-weight: 600;
+
+          ul {
+            display: flex;
+            .activePage {
+              padding-right: 15px;
+            }
+            .total {
+              padding-left: 20px;
+              color: #666;
+              font-weight: 600;
+            }
           }
         }
       }
@@ -128,7 +132,7 @@ a {
         transform-origin: center;
         width: 850px;
         height: 850px;
-        animation: rotatebg 18s linear infinite;
+        animation: rotatebg 15s linear infinite;
         span {
           display: flex;
           width: 700px;
@@ -137,7 +141,7 @@ a {
           will-change: transform;
           transform-origin: center;
           transition: filter 0.25s cubic-bezier(0.48, 0.04, 0.22, 0.99), -webkit-transform 0.25s cubic-bezier(0.48, 0.04, 0.22, 0.99);
-          filter: blur(4.5rem);
+          filter: blur(5rem);
           position: absolute;
         }
         .bgimg-01 {
@@ -237,6 +241,16 @@ a {
         }
         .pagination {
           bottom: 30px;
+          .navi {
+            ul {
+              .activePage {
+                padding-right: 10px;
+              }
+              .total {
+                padding-left: 10px;
+              }
+            }
+          }
         }
       }
     }

@@ -80,14 +80,19 @@
   font-family: "Play";
   font-weight: 600;
 }
-.wrap .container #main #home .title .t2 {
-  font-size: 87px;
-  color: #e96550;
-}
 .wrap .container #main #home .title .t1 {
+  transition-duration: 2s;
+  transform: none;
   color: transparent;
-  -webkit-text-stroke-color: #e96550;
+  -webkit-text-stroke-color: #111;
   -webkit-text-stroke-width: thin;
+}
+.wrap .container #main #home .title .t2 {
+  transition-duration: 5s;
+  transform: none;
+  font-size: 87px;
+  color: #111;
+  margin-top: 25px;
 }
 .wrap .container #main #about {
   font-family: "Noto Sans KR";
@@ -99,12 +104,24 @@
   align-items: center;
 }
 .wrap .container #main #about .page .txtFirst {
-  margin-right: 137px;
+  margin-right: 186px;
   margin-bottom: 250px;
+  line-height: 1.4;
+}
+.wrap .container #main #about .page .txtFirst.on {
+  transition: all 2s;
+  opacity: 1;
+  transform: translate3d(0px, 0, 0);
 }
 .wrap .container #main #about .page .txtSeond {
   margin-top: 150px;
-  margin-right: 137px;
+  margin-right: 200px;
+  line-height: 1.4;
+}
+.wrap .container #main #about .page .txtSeond.on {
+  transition: all 2s;
+  opacity: 1;
+  transform: translate3d(0px, 0, 0);
 }
 .wrap .container #main #about .page .txtFirst .l50,
 .wrap .container #main #about .page .txtSeond .l50 {
@@ -283,14 +300,14 @@
   vertical-align: middle;
   width: 100%;
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
-  color: #999;
+  color: #666;
   line-height: 1.6;
   letter-spacing: -0.5px;
 }
 .wrap .container #main #project .sub_content .chapter .cm_hero .cmh_txt a {
-  margin-top: 30px;
+  margin-top: 35px;
 }
 .wrap .container #main #project .sub_content .chapter .cm_hero .cmh_txt a.btn {
   border-color: currentColor !important;
@@ -888,8 +905,12 @@
   }
   .wrap .container #main #about .page .txtFirst,
 .wrap .container #main #about .page .txtSeond {
-    margin-right: 20px;
+    margin: 0 30px;
     margin-bottom: 0px;
+  }
+  .wrap .container #main #about .page .txtFirst h2,
+.wrap .container #main #about .page .txtSeond h2 {
+    font-size: 20px;
   }
   .wrap .container #main #about .page .txtFirst .innerTxt,
 .wrap .container #main #about .page .txtSeond .innerTxt {
@@ -983,11 +1004,22 @@
   }
   .wrap .container #main #about .page .txtFirst,
 .wrap .container #main #about .page .txtSeond {
+    height: 62%;
     margin-right: 20px;
     margin-bottom: 0px;
   }
+  .wrap .container #main #about .page .txtFirst p,
+.wrap .container #main #about .page .txtSeond p {
+    font-size: 15px;
+  }
+  .wrap .container #main #about .page .txtFirst h2,
+.wrap .container #main #about .page .txtSeond h2 {
+    font-size: 18px;
+  }
   .wrap .container #main #about .page .txtFirst .innerTxt,
 .wrap .container #main #about .page .txtSeond .innerTxt {
+    height: 62%;
+    margin-top: 30px;
     padding-left: 0px;
   }
   .wrap .container #main #about .page .txtFirst .innerTxt::before,
@@ -996,8 +1028,11 @@
   }
   .wrap .container #main #about .page .txtFirst .innerTxt h2,
 .wrap .container #main #about .page .txtSeond .innerTxt h2 {
-    font-size: 20px;
-    line-height: 1.3;
+    font-size: 18px;
+  }
+  .wrap .container #main #about .page .txtFirst .innerTxt p,
+.wrap .container #main #about .page .txtSeond .innerTxt p {
+    font-size: 15px;
   }
   .wrap .container #main #about .page .txtSeond {
     margin-top: 0px;

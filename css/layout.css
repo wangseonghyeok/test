@@ -93,13 +93,16 @@ a {
 .wrap #bottom .content .pagination .navi {
   font-size: 24px;
   font-family: "Play";
-}
-.wrap #bottom .content .pagination .navi .swiper-pagination-current {
   font-weight: 600;
-  padding-right: 10px;
 }
-.wrap #bottom .content .pagination .navi .swiper-pagination-total {
-  padding-left: 10px;
+.wrap #bottom .content .pagination .navi ul {
+  display: flex;
+}
+.wrap #bottom .content .pagination .navi ul .activePage {
+  padding-right: 15px;
+}
+.wrap #bottom .content .pagination .navi ul .total {
+  padding-left: 20px;
   color: #666;
   font-weight: 600;
 }
@@ -125,7 +128,7 @@ a {
   transform-origin: center;
   width: 850px;
   height: 850px;
-  animation: rotatebg 18s linear infinite;
+  animation: rotatebg 15s linear infinite;
 }
 .wrap .container .bg .rotate span {
   display: flex;
@@ -135,7 +138,7 @@ a {
   will-change: transform;
   transform-origin: center;
   transition: filter 0.25s cubic-bezier(0.48, 0.04, 0.22, 0.99), -webkit-transform 0.25s cubic-bezier(0.48, 0.04, 0.22, 0.99);
-  filter: blur(4.5rem);
+  filter: blur(5rem);
   position: absolute;
 }
 .wrap .container .bg .rotate .bgimg-01 {
@@ -217,6 +220,12 @@ a {
   }
   .wrap #bottom .content .pagination {
     bottom: 30px;
+  }
+  .wrap #bottom .content .pagination .navi ul .activePage {
+    padding-right: 10px;
+  }
+  .wrap #bottom .content .pagination .navi ul .total {
+    padding-left: 10px;
   }
 }
 @media all and (max-width: 400px) {
