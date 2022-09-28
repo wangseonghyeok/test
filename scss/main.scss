@@ -340,6 +340,9 @@
                 .stack02 {
                   width: 273px;
                 }
+                .stack03 {
+                  width: 95px;
+                }
               }
               .cmh_color {
                 display: inline-block;
@@ -496,7 +499,8 @@
                   &:nth-child(2),
                   &:nth-child(3),
                   &:nth-child(4),
-                  &:nth-child(5) {
+                  &:nth-child(5),
+                  &:nth-child(6) {
                     span {
                       position: relative;
                       &::after {
@@ -539,10 +543,17 @@
                       }
                     }
                   }
-                  &:nth-child(4) {
+                  &:nth-child(5) {
                     span {
                       &::after {
-                        content: "Toy Project";
+                        content: "Node Project";
+                      }
+                    }
+                  }
+                  &:nth-child(6) {
+                    span {
+                      &::after {
+                        content: "React Project";
                       }
                     }
                   }
@@ -1213,8 +1224,13 @@
                   span {
                     color: #111;
                   }
+                  .stack03 {
+                    // width: 90px !important;
+                    margin: 0 auto;
+                  }
                   .stack02 {
-                    width: 225px !important;
+                    width: 280px !important;
+                    margin: 0 auto;
                   }
                   .stack01 {
                     margin: 0 auto;

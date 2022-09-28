@@ -328,6 +328,9 @@
 .wrap .container #main #project .sub_content .chapter .cm_hero .cmh_txt .stack02 {
   width: 273px;
 }
+.wrap .container #main #project .sub_content .chapter .cm_hero .cmh_txt .stack03 {
+  width: 95px;
+}
 .wrap .container #main #project .sub_content .chapter .cm_hero .cmh_color {
   display: inline-block;
   vertical-align: middle;
@@ -459,10 +462,10 @@
 .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot span:hover {
   background-color: #111;
 }
-.wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(1) span, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(2) span, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(3) span, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(4) span, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(5) span {
+.wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(1) span, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(2) span, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(3) span, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(4) span, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(5) span, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(6) span {
   position: relative;
 }
-.wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(1) span::after, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(2) span::after, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(3) span::after, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(4) span::after, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(5) span::after {
+.wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(1) span::after, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(2) span::after, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(3) span::after, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(4) span::after, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(5) span::after, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(6) span::after {
   font-weight: 600;
   font-family: "Play";
   content: "Website Clone";
@@ -479,7 +482,7 @@
   opacity: 0;
   transition: all 0.25s ease;
 }
-.wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(1) span:hover::after, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(2) span:hover::after, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(3) span:hover::after, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(4) span:hover::after, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(5) span:hover::after {
+.wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(1) span:hover::after, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(2) span:hover::after, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(3) span:hover::after, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(4) span:hover::after, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(5) span:hover::after, .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(6) span:hover::after {
   opacity: 1;
   background: #111;
   color: #fff;
@@ -490,8 +493,11 @@
 .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(4) span::after {
   content: "Toy Project";
 }
-.wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(4) span::after {
-  content: "Toy Project";
+.wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(5) span::after {
+  content: "Node Project";
+}
+.wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot:nth-child(6) span::after {
+  content: "React Project";
 }
 .wrap .container #main #project .sub_content .chapter .cm_hero .owl-dots .owl-dot.active span {
   background-color: #111;
@@ -875,8 +881,12 @@
   .wrap .container #main #project .sub_content .chapter .cm_hero .cmh_txt span {
     color: #111;
   }
+  .wrap .container #main #project .sub_content .chapter .cm_hero .cmh_txt .stack03 {
+    margin: 0 auto;
+  }
   .wrap .container #main #project .sub_content .chapter .cm_hero .cmh_txt .stack02 {
-    width: 225px !important;
+    width: 280px !important;
+    margin: 0 auto;
   }
   .wrap .container #main #project .sub_content .chapter .cm_hero .cmh_txt .stack01 {
     margin: 0 auto;
